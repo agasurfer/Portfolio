@@ -1,0 +1,93 @@
+@import 'layout';
+@import 'mediaQueries';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap');
+/* font-family: "Inter",sans-serif */
+/* font-family: "Arizonia",cursive; */
+ /* font-family: "Special Elite",system-ui; */
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    color: rgb(252, 209, 69);
+    transform: scale(1.1);
+}
+
+h4 {
+    font-weight: 100px;
+    font-family: "Inter", sans-serif
+    
+}
+
+.logo {
+    font-family: "Arizonia", cursive;
+    font-size: 28px;
+
+    span {
+        color: rgb(243, 169, 84);
+    }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    border: solid 3px rgb(243, 169, 84);
+    border-radius: 12px;
+
+    a {
+        border: solid 2px rgb(243, 169, 84);
+        padding: 10px;
+        border-radius: 12px;
+        color: rgb(243, 169, 84) ;
+    }
+
+    a:hover {
+        background-color: rgb(243, 169, 84);
+        color: whitesmoke;
+    }
+
+    span {
+        color: rgb(243, 169, 84);
+        font-size: 1.75rem;
+    }
+}
+
+
+.about-text {
+    margin-top: 15px;
+    text-justify: center;
+    position: relative;
+    padding-left: 40px;
+
+    span {
+        color: rgb(243, 169, 84) ;
+    }
+    }
+
+.about-text::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 30px;
+        height: 2px;
+        background-color: rgb(243, 169, 84);
+        margin-bottom: 8px;
+        
+    }
+
+    .my-portfolio {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px ;
+    }

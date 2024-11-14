@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: rgb(29, 27, 27);
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(125deg, rgb(38, 35, 35) 0%, rgb(46, 43, 43) 35%, rgb(52, 49, 49) 70%, rgb(46, 43, 43) 100%);
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  /*   background-color: rgb(46, 43, 43);
+    background: linear-gradient(180deg,
+                rgb(36, 33, 33) 0%,
+                rgb(46, 43, 43) 40%,
+                rgb(56, 53, 53) 100%); */
+  padding: 30px 50px 30px 50px;
+}
+
+header .container {
+  /* height: 60px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.hero img {
+  max-height: 400px;
+  border-radius: 12px;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 20px;
+}
+
+.portrait {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+/* .skill-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+} */
+.skill-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* .card {
+    padding: 80px;
+    background-color: rgb(54, 51, 51);
+    border-radius: 15px;
+    height: 80px;
+    width: 80px;
+} */
+.card {
+  background-color: rgb(54, 51, 51);
+  border-radius: 15px;
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.my-skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.growing {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.growing:hover {
+  color: rgb(243, 169, 84);
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* .portfolio-grid .project img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-grid .project a {
+    display: block;
+} */
+.project a {
+  height: 200px;
+  width: 150px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+/* @media (max-width: 992px) {
+    .skill-cards {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    .skill-cards {
+        grid-template-columns: 1fr;
+
+    }
+}  */
+/* font-family: "Inter",sans-serif */
+/* font-family: "Arizonia",cursive; */
+/* font-family: "Special Elite",system-ui; */
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(252, 209, 69);
+  transform: scale(1.1);
+}
+
+h4 {
+  font-weight: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  font-family: "Arizonia", cursive;
+  font-size: 28px;
+}
+.logo span {
+  color: rgb(243, 169, 84);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  border: solid 3px rgb(243, 169, 84);
+  border-radius: 12px;
+}
+.hero-text a {
+  border: solid 2px rgb(243, 169, 84);
+  padding: 10px;
+  border-radius: 12px;
+  color: rgb(243, 169, 84);
+}
+.hero-text a:hover {
+  background-color: rgb(243, 169, 84);
+  color: whitesmoke;
+}
+.hero-text span {
+  color: rgb(243, 169, 84);
+  font-size: 1.75rem;
+}
+
+.about-text {
+  margin-top: 15px;
+  text-justify: center;
+  position: relative;
+  padding-left: 40px;
+}
+.about-text span {
+  color: rgb(243, 169, 84);
+}
+
+.about-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(243, 169, 84);
+  margin-bottom: 8px;
+}
+
+.my-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

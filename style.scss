@@ -61,6 +61,91 @@ h4 {
         font-size: 1.75rem;
     }
 }
+/*  .modal {
+    display: none;
+
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+} */
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(125deg,
+                rgb(38, 35, 35) 0%,
+                rgb(46, 43, 43) 35%,
+                rgb(52, 49, 49) 70%,
+                rgb(46, 43, 43) 100%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    /* width: 60%; */
+    max-width: 600px;
+    border-radius: 20px;
+    z-index: 1001;
+    
+
+
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.modal a {
+    font-size: 2.5rem;
+
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(243, 169, 84);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: rgb(243, 169, 84);
+    border-width: 2px;
+    outline: none;
+}
+
+.submit {
+    display: inline-block;
+    background: linear-gradient(125deg,
+                rgb(38, 35, 35) 0%,
+                rgb(46, 43, 43) 35%,
+                rgb(52, 49, 49) 70%,
+                rgb(46, 43, 43) 100%);
+}
+
+.close-button {
+    cursor: default;
+    font-size: 2rem;
+    color: rgb(243, 169, 84);;
+}
 
 
 .about-text {
@@ -94,32 +179,6 @@ h4 {
     }
 
 
-    .contact-me2::before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0.85rem;
-        width: 30%;
-        height: 2px;
-        background-color: rgb(243, 169, 84);
-        z-index: -1;
-        
-        
-    }
-    
-    .contact-me2::after{
-        content: "";
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0.85rem;
-            width: 30%;
-            height: 2px;
-            background-color: rgb(243, 169, 84);
-            z-index: -1;
-
-        }
 
         .contact-item {
             background-color: rgb(48, 45, 45);
@@ -128,9 +187,11 @@ h4 {
 
     .thanks {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
+        margin-top: 40px;
         color: rgb(243, 169, 84);;
     }
 

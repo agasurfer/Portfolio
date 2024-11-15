@@ -51,11 +51,11 @@ header .container {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    background: linear-gradient(125deg,
+    /* background: linear-gradient(125deg,
                 rgb(38, 35, 35) 0%,
                 rgb(46, 43, 43) 35%,
                 rgb(52, 49, 49) 70%,
-                rgb(46, 43, 43) 100%);
+                rgb(46, 43, 43) 100%); */
 }
 
 .navbar {
@@ -87,7 +87,11 @@ header .container {
                 rgb(46, 43, 43) 35%,
                 rgb(52, 49, 49) 70%,
                 rgb(46, 43, 43) 100%);
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
+
 
 .skill-cards {
     display: flex;
@@ -121,7 +125,7 @@ header .container {
 .my-skills{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .growing {
@@ -133,13 +137,16 @@ header .container {
     color: rgb(243, 169, 84) ;
 }
 
-/* .portfolio .container {
+.portfolio .container {
     background: linear-gradient(125deg,
                 rgb(38, 35, 35) 0%,
                 rgb(46, 43, 43) 35%,
                 rgb(52, 49, 49) 70%,
                 rgb(46, 43, 43) 100%);
-} */
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                
+} 
 
 .portfolio-grid {
     display: flex;
@@ -147,6 +154,8 @@ header .container {
     justify-content: space-evenly;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 40px;
 
 }
 
@@ -225,6 +234,7 @@ header .container {
 .contact .container {
     padding: 0;
     padding-bottom: 50px;
+    
 
 }
 
@@ -244,13 +254,21 @@ header .container {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+    a {
+        cursor: default;
+    }
+}
+
+footer .container {
+    background: linear-gradient(125deg,
+                rgb(38, 35, 35) 0%,
+                rgb(46, 43, 43) 35%,
+                rgb(52, 49, 49) 70%,
+                rgb(46, 43, 43) 100%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 
-  hr {
-      
-    height: 2px;
-        background-color: rgb(221, 156, 59);
-        border: none;
-  }
+
 

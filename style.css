@@ -19,7 +19,12 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(125deg, rgb(38, 35, 35) 0%, rgb(46, 43, 43) 35%, rgb(52, 49, 49) 70%, rgb(46, 43, 43) 100%);
+  /* background: linear-gradient(125deg,
+              rgb(38, 35, 35) 0%,
+              rgb(46, 43, 43) 35%,
+              rgb(52, 49, 49) 70%,
+              rgb(46, 43, 43) 100%); */
+  background: linear-gradient(125deg, rgb(30, 28, 28) 0%, rgb(36, 34, 34) 35%, rgb(41, 39, 39) 70%, rgb(36, 34, 34) 100%);
   max-width: 1110px;
   margin: 0 auto;
   border: solid 1px rgb(243, 169, 84);
@@ -38,6 +43,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+  background: linear-gradient(125deg, rgb(38, 35, 35) 0%, rgb(46, 43, 43) 35%, rgb(52, 49, 49) 70%, rgb(46, 43, 43) 100%);
 }
 
 .navbar {
@@ -60,6 +66,10 @@ header .container {
 .portrait {
   grid-column: 1/2;
   grid-row: 1/3;
+}
+
+.about-me .container {
+  background: linear-gradient(125deg, rgb(38, 35, 35) 0%, rgb(46, 43, 43) 35%, rgb(52, 49, 49) 70%, rgb(46, 43, 43) 100%);
 }
 
 .skill-cards {
@@ -104,6 +114,13 @@ header .container {
   color: rgb(243, 169, 84);
 }
 
+/* .portfolio .container {
+    background: linear-gradient(125deg,
+                rgb(38, 35, 35) 0%,
+                rgb(46, 43, 43) 35%,
+                rgb(52, 49, 49) 70%,
+                rgb(46, 43, 43) 100%);
+} */
 .portfolio-grid {
   display: flex;
   flex-direction: row;

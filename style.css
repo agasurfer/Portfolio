@@ -204,20 +204,6 @@ hr {
   border: none;
 }
 
-/* @media (max-width: 992px) {
-    .skill-cards {
-        grid-template-columns: 1fr 1fr;
-
-    }
-}
-
-
-@media (max-width: 600px) {
-    .skill-cards {
-        grid-template-columns: 1fr;
-
-    }
-}  */
 /* font-family: "Inter",sans-serif */
 /* font-family: "Arizonia",cursive; */
 /* font-family: "Special Elite",system-ui; */

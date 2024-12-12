@@ -377,6 +377,7 @@ textarea:focus {
   text-justify: center;
   position: relative;
   padding-left: 40px;
+  font-size: 1.3rem;
 }
 .about-text span {
   color: rgb(243, 169, 84);
